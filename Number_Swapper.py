@@ -11,4 +11,5 @@ def num_swapper(num):
         print(num % 10, end="") 
         # Remove the last digit by using floor division
         num = num // 10
+
 print(num_swapper(num))
