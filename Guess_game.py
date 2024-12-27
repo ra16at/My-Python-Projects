@@ -3,7 +3,6 @@ from random import randint
 def guess_game():
     comuputer_num = randint(1, 100)
     your_num = int(input("Enter your number: "))
-    
     while True:
         if your_num == comuputer_num:
             print("You won!")
@@ -18,5 +17,5 @@ def guess_game():
 while True:
     guess_game()
     play_again = input("Do you want to play again? (y/n): ").lower()
-    if play_again != 'y':
+    if play_again != 'yes':
         break
