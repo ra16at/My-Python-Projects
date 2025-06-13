@@ -9,10 +9,10 @@ import string
  We use the random.choices() method to generate a password of the given length.
  Finally, we return the password. '''
 
+pass_length = int(input("Enter the length: "))
 def password_generator(length=pass_length):
     characters = string.ascii_letters + string.digits + string.punctuation
     password = ''.join(random.choices(characters, k=length))
     return password
-pass_length = int(input("Enter the length: "))
 
 print(password_generator(pass_length))
