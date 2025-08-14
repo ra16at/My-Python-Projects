@@ -12,6 +12,7 @@ from keras.callbacks import EarlyStopping
 
 MODEL_PATH = "mnist_digit_model.keras"
 DATA_PATH = "my_digits.pkl"
+N_CLASSES = 11  # 0-9 digits + 1 for 'Not a Number'
 
 # ---------------------------
 # Model loading/training
